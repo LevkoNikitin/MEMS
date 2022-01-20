@@ -1,21 +1,13 @@
-//
-//  i2c.h
-//  i2c
-//
-//  Created by Michael Köhler on 09.10.17.
-//
-//
-
-#ifndef i2c_h
-#define i2c_h
+#ifndef I2C_H
+#define I2C_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 	
 /* TODO: setup i2c/twi */
-#define F_I2C			100000UL// clock i2c
-#define PSC_I2C			1		// prescaler i2c
+#define F_I2C			100000UL // clock i2c
+#define PSC_I2C			1		 // prescaler i2c
 #define SET_TWBR		(F_CPU/F_I2C-16UL)/(PSC_I2C*2UL)
 
 #include <stdio.h>
@@ -43,4 +35,4 @@ uint8_t i2c_readNAck(void);         // read byte with NACK
 }
 #endif
 	
-#endif /* i2c_h */
+#endif /* I2C_H */

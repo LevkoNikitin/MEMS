@@ -1,10 +1,3 @@
-//
-//  i2c.c
-//  i2c
-//
-//  Created by Michael Köhler on 09.10.17.
-//
-//
 // #define F_CPU 16000000U
 #include "i2c.h"
 
